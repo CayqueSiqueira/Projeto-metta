@@ -1,5 +1,4 @@
 import cv2
-import json
 from datetime import datetime
 from pathlib import Path
 from typing import Tuple, List, Dict
