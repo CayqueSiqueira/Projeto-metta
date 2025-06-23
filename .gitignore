@@ -1,0 +1,7 @@
+# Arquivos temporários do Python
+__pycache__/
+*.py[cod]
+
+# Pasta de resultados (ignora conteúdo mas mantém a pasta)
+output_results/*
+!output_results/.gitkeep
