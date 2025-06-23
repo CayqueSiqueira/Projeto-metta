@@ -1,11 +1,11 @@
-# 📘 ABOUT.md — Detecção de Pessoas com Análise em Vídeo
+# ABOUT.md — Detecção de Pessoas com Análise em Vídeo
 
-## 🎯 Objetivo da Solução
+## Objetivo da Solução
 A aplicação foi desenvolvida para processar um vídeo de entrada, detectar pessoas em cada frame utilizando uma **rede neural pré-treinada (Faster R-CNN)** e gerar análises com contagens e alertas(contagens acima do limiar) em arquivos `.json`. Além disso, uma interface gráfica exibe o vídeo processado e um gráfico com o histórico de detecções.
 
 ---
 
-## 🛠️ Tecnologias e Bibliotecas Utilizadas
+## Tecnologias e Bibliotecas Utilizadas
 
 | Tecnologia      | Uso Principal                                      |
 |-----------------|---------------------------------------------------|
@@ -19,9 +19,9 @@ A aplicação foi desenvolvida para processar um vídeo de entrada, detectar pes
 
 ---
 
-## 🧠 Abordagem Técnica
+##  Abordagem Técnica
 
-### ✅ 1. Arquitetura Modular
+### 1. Arquitetura Modular
 
 O projeto foi dividido em módulos especializados para garantir manutenibilidade e reutilização de código.
 
@@ -34,7 +34,7 @@ O projeto foi dividido em módulos especializados para garantir manutenibilidade
 
 ---
 
-### ✅ 2. Rede Neural Pré-Treinada
+### 2. Rede Neural Pré-Treinada
 
 O modelo utilizado é o `Faster R-CNN` com backbone `ResNet-50 FPN`, pré-treinado no dataset COCO. Esse modelo foi escolhido por:
 
@@ -44,14 +44,14 @@ O modelo utilizado é o `Faster R-CNN` com backbone `ResNet-50 FPN`, pré-treina
 
 ---
 
-## 🧪 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-- 🔁 Leitura frame a frame de um vídeo de entrada
-- 👤 Detecção de pessoas com bounding boxes
-- 📊 Registro por frame da contagem de pessoas (`history.json`)
-- 🚨 Geração de alertas (`alerts.json`) quando o número de pessoas ultrapassa um limite definido via argumento
-- 🎞️ Vídeo final com as detecções desenhadas (`output_video.mp4`)
-- 🖥️ Interface gráfica com player de vídeo + gráfico de contagem por frame
+-  Leitura frame a frame de um vídeo de entrada
+-  Detecção de pessoas com bounding boxes
+-  Registro por frame da contagem de pessoas (`history.json`)
+-  Geração de alertas (`alerts.json`) quando o número de pessoas ultrapassa um limite definido via argumento
+-  Vídeo final com as detecções desenhadas (`output_video.mp4`)
+-  Interface gráfica com player de vídeo + gráfico de contagem por frame
 
 
 ## Passos da Execução do Sistema de Detecção
